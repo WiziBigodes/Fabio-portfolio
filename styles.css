@@ -1,3 +1,18 @@
+/* Global properties */
+:root {
+    /* background-color */
+    --bColor1: #0D1B2A;
+    --bColor2: #264661;
+    --bColor3: #4885BD;
+    /* highlight-color */
+    --hlColor1: #FF9600;
+    --hlColor2: #FFB424;
+    --hlColor3: #FFC850;
+    /* detail-color */
+    --dColor1: #FDFE68;
+    --dColor2: #FFEB00;
+    --dColor3: #FFFA66;
+}
 *{
     padding: 0;
     margin:0;
@@ -10,12 +25,21 @@ li{
     list-style: none;
 }
 
+/* Animations */
+@keyframes trocaCor {
+    0%   { color: var(--hlColor1); }
+    25%  { color: var(--hlColor2); }
+    50%  { color: var(--hlColor3); }
+    75%  { color: var(--dColor3); }
+    100% { color: var(--dColor2); }
+}
+
 /* Hero Section */
 #hero{
     height: 500px;
     min-height: 36%;
     max-width: 100%;
-    background-color: rgb(28,32,89);
+    background-color: var(--bColor2);
     padding: 3rem 5rem;
     color: #fff;
     display: flex;
@@ -28,9 +52,10 @@ li{
 }
 
 .hero-info h1{
-    color:rgb(255, 180, 36);
+    color:var(--hlColor1);
     font-size: 3rem;
     padding: 1rem 0;
+    animation: trocaCor 4s linear infinite alternate;
 }
 /* para remover abaixo */
 
@@ -49,7 +74,7 @@ li{
 
 #hero-tools span{
     font-weight: bolder;
-    color: rgb(255, 180, 36);
+    color: var(--hlColor2);
     font-size: 1.25rem;
 }
 
@@ -66,7 +91,7 @@ li{
 #nav-bar{
     max-width: 100%;
     min-height: 20%;
-    background-color: rgb(255, 180, 36);
+    background-color: var(--hlColor3);
 }
 
 .navlist{
@@ -85,7 +110,7 @@ li{
     padding-bottom: 0.75rem;
     background-color: #fff;
     text-align: center;
-    background-color: rgb(28,32,89);
+    background-color: var(--bColor2);
 }
 .navlist li:hover{
     top: 0.5rem;
@@ -93,10 +118,10 @@ li{
 
 .navlist a{
     text-decoration: none;
-    color: rgb(253, 254, 104);
+    color: va(--hlColor1);
     font-size: 1.5rem;
     font-weight: bold;
-    
+    animation: trocaCor 4s linear infinite alternate;
 }
 
 
@@ -105,11 +130,14 @@ li{
 #projects{
     display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
-    background-color: rgb(65, 67,92);
+    background-color: var(--bColor2);
     max-width: 100%;
-    max-height: 66%;
+    max-height: 76%;
     padding: 2.5rem;
+    gap: 1rem;
 }
 
 .card-proj{
@@ -117,9 +145,14 @@ li{
     padding: 1rem;
     height: 460px;
     width: 350px;
+    background-color: var(--bColor3);
 }
 
 .card-proj-pics img{
     max-width: 100%;
     max-height: 100%;
+    margin-bottom: 1.5rem;
 }
+
+
+/* Contacts area */

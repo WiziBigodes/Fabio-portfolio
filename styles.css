@@ -88,7 +88,7 @@ li{
 
 /* Navigational bar */
 
-#nav-bar{
+#navbar{
     max-width: 100%;
     min-height: 20%;
     background-color: var(--hlColor3);

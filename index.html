@@ -25,11 +25,11 @@
         </div>
         <div class="hero-pic"><img src="placeholder"/></div>
     </header>
-    <nav id="nav-bar" class="section">
+    <nav id="navbar" class="section">
         <ul class="navlist">
             <li><a href="#hero">Me</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main id="projects">
@@ -38,8 +38,8 @@
                 <img src="./images/FF-Landing page.png"/>
             </div>
             <div class="card-proj-descri">
-                <h3>Fredom Fantasy Landing Page</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, sapiente!
+                <h3 class="project-title">Fredom Fantasy Landing Page</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, sapiente!
                 </p>
             </div>
             <div class="card-proj-tools"></div>
@@ -55,8 +55,37 @@
             <div class="card-proj-tools"></div>
         </div>
     </main>
-    <footer id="contacts">
-        
+    <footer id="contact">
+        <div>
+            <h2>Interested in worikng together?</h2>
+        </div>
+        <div></div>
+            <div id="way-of-contact">
+                <div class="contact-platform">
+                    <img class="plat-icon" src="">
+                    <h3 class="plat-icon-name"></h3>
+                </div>
+            </div>
+            <div id="contact-form">
+                <form>
+                    <div class="user-input">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="user-input">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="user-input">
+                        <label for="text-contact">Message:</label>
+                        <input type="textarea" name="text-contact" id="text-contact" placeholder="Write your message..." rows="10" cols="60">
+                    </div>
+                    <div class="user-input">
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>    
     </footer>
 </body>
 </html>
